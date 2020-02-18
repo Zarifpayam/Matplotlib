@@ -1,0 +1,71 @@
+import numpy as np
+# 2
+X=np.array([1,22.4,5,35,4,6.7,3,8,40])
+print (X)
+
+print(X.ndim)
+
+print(X.shape)
+print(X.size)
+print(X.dtype)
+
+
+# 3
+
+M = np.array([['a', 'b'],['c', 'd'],[3, 3]])
+print(M)
+
+print(M.ndim)
+
+print(M.shape)
+print(M.size)
+print(M.dtype)
+
+# 4
+ARR = np.arange(1,20,2)
+print(ARR)
+
+# 4 My initial reflex
+# ARRAND = []
+# For i from 0 to 10 :
+# np.rand()
+# ARRAND.append(np.rand)
+
+
+# 4 After I googled rand :)
+ARRAND = np.random.rand(1,10)
+print(ARRAND)
+
+
+ARRAND1=[np.random.random() for _ in range(10)]
+print (ARRAND1)
+
+
+# 5
+Matrix = np.zeros((2,2))
+print(Matrix)
+
+# 5
+Matrix2 = np.random.rand(4,4)
+print(ARRAND)
+
+# 6
+RESH = np.reshape(ARR,(2,5))
+print(RESH)
+
+# 7
+BIGM = np.arange(1,37)
+RESH1 = np.reshape(BIGM,(6,6))
+print(RESH1)
+
+Element = RESH1[0][0]
+print(Element)
+
+ROW = RESH1[1]
+print(ROW)
+
+MID = RESH1[2:4,2:4]
+print(MID)
+
+SUM = np.sum(RESH1, axis=0)
+print(SUM)
